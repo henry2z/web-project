@@ -1,0 +1,46 @@
+label {
+  display: block;
+}
+
+input {
+  width: 100%;
+  margin: 10px;
+  padding: 2px;
+}
+
+body {
+  background-color: #1a2b3c;
+  color: #e6e6f7;
+}
+
+fieldset {
+  margin: 10px;
+}
+
+.inline {
+  display: inline;
+  width: auto;
+}
+
+#title {
+  font-family: sans-serif;
+  color: #f8f8f8;
+}
+
+#description {
+  font-size: 15px;
+  text-align: right;
+}
+
+input[type="checkbox"] {
+  width: 10px;
+}
+
+textarea {
+  width: 100%;
+  margin: 10px;
+}
+
+#submit {
+  width: 100px;
+}

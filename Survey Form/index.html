@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <h1 id="title">Make Suggestions</h1>
+    <p id="description">--Help us improve our app by making suggestions</p>
+    <form id="survey-form">
+      <label id="name-label">Enter your name: <input id="name" type="text" required placeholder="Henry Zhang"></input></label>
+      <label id="email-label">Enter your email:<input id="email" type="email" required placeholder="email@site.com"></input></label>
+      <label id="number-label">Enter you age:<input id="number" type="number" min="12" max="120" placeholder="40"></input></label>
+      <label>We should improve on <select id="dropdown">
+        <option>Everything's Good</option>
+        <option>Page appearance</option>
+        <option>Technical Issues</option>
+      </select></label>
+      <fieldset>
+        <legend>You mostly use this app on which account type?</legend>
+        <input type="radio" checked name="radio" class="inline" value="personal">Personal</input>
+        <input type="radio" name="radio" class="inline" value="business">Business</input>
+      </fieldset>
+      <fieldset>
+        <legend>Which features are you're favorite?</legend>
+        <input type="checkbox" value="live-chat">Live chat</input>
+        <input type="checkbox" value="friending">Friending</input>
+        <input type="checkbox" value="progress">Progress</input>
+      </fieldset>
+      <label>Please leave a comment down below: <textarea placeholder="Leave a comment..."></textarea></label>
+      <input type="submit" id="submit"></input>
+    </form>
+  </body>
+  <link rel="stylesheet" href="styles.css">
+</html>

@@ -1,0 +1,134 @@
+.wheel {
+  border: 2px solid black;
+  border-radius: 50%;
+  margin-left: 200px;
+  margin-top: 200px;
+  position: absolute;
+  height: 55vw;
+  width: 55vw;
+  max-width: 500px;
+  max-height: 500px;
+  animation: wheel 10s linear infinite;
+}
+
+.line {
+  background-color: black;
+  width: 50%;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0% 0%;
+}
+
+.line:nth-of-type(2) {
+  transform: rotate(60deg);
+}
+.line:nth-of-type(3) {
+  transform: rotate(120deg);
+}
+.line:nth-of-type(4) {
+  transform: rotate(180deg);
+}
+.line:nth-of-type(5) {
+  transform: rotate(240deg);
+}
+.line:nth-of-type(6) {
+  transform: rotate(300deg);
+}
+
+.stable-left {
+  width: 100%;
+  animation: stable-left 10s linear infinite
+}
+
+.stable-right {
+  width: 100%;
+  animation: stable-right 10s linear infinite
+}
+
+.cabin {
+  background-color: red;
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  border: 2px solid;
+  transform-origin: 50% 0%;
+  animation: cabins 10s ease-in-out infinite;
+}
+
+.cabin:nth-of-type(1) {
+  right: -8.5%;
+  top: 50%;
+}
+.cabin:nth-of-type(2) {
+  right: 17%;
+  top: 93.5%;
+}
+.cabin:nth-of-type(3) {
+  right: 67%;
+  top: 93.5%;
+}
+.cabin:nth-of-type(4) {
+  left: -8.5%;
+  top: 50%;
+}
+.cabin:nth-of-type(5) {
+  left: 17%;
+  top: 7%;
+}
+.cabin:nth-of-type(6) {
+  right: 17%;
+  top: 7%;
+}
+
+@keyframes wheel {
+   0% {
+     transform: rotate(0deg);
+   }
+   100% {
+     transform: rotate(360deg);
+   }
+}
+
+@keyframes cabins {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    background-color: yellow;
+  }
+
+  50% {
+    background-color: #00ff00;
+  }
+
+  75% {
+    background-color: blue;
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes stable-left {
+  0% {
+    transform: rotate(135deg)
+  }
+
+  100% {
+    transform: rotate(-225deg);
+  }
+}
+
+@keyframes stable-right {
+  0% {
+    transform: rotate(45deg)
+  }
+
+  100% {
+    transform: rotate(-315deg);
+  }
+}

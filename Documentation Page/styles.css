@@ -1,0 +1,10 @@
+@media (max-width: 1020px) {
+  .nav-link, .main-section {
+    font-size: 14px;
+  }
+}
+
+#main-doc {
+  background-color: #dddddd;
+  margin: 10%;
+}

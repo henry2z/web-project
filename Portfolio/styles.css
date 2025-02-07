@@ -1,0 +1,53 @@
+html {
+  background-color: #112255;
+}
+
+#navbar {
+  display: grid;
+  grid-template-columns: 10em 10em;
+  margin: auto;
+}
+
+div {
+  display: grid;
+  grid-template-columns: 45vw 10vw 45vw
+}
+
+#welcome-section {
+  font-size: 20px;
+}
+
+.divider {
+  width: 0;
+  border: 1px solid gray
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: minmax(1vw, 50vw) minmax(1vw, 50vw) minmax(1vw, 50vw);
+  gap: 5vw;
+  margin: 1vh 5vw;
+}
+
+h1, p {
+  color: rgb(222, 333, 444);
+}
+
+a {
+  color: rgb(444, 111, 222);
+}
+
+.project-tile {
+  border: 1px solid white;
+  padding: 0 5%;
+}
+
+#last {
+  margin-top: 2vh;
+  text-align: center
+}
+
+.project-tile:hover {
+  transform: scale(1.2);
+  cursor: not-allowed;
+}

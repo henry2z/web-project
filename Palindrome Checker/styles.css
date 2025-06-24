@@ -1,0 +1,35 @@
+html {
+  background-color: #001133;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #deffed;
+}
+
+#description {
+  width: 20%;
+  font-size: 20px;
+  text-align: center;
+  background-color: green;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#result {
+  font-size: 30px;
+}
+
+div p {
+  margin: 5px;
+}
+
+.hidden {
+  display: none;
+}
